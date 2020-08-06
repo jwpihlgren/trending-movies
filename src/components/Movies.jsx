@@ -7,6 +7,7 @@ function Movies(props) {
     return(
       <Container>
         <Grid  centered columns={5} doubling >
+
         
             {props.movies.results.map( (movie) => {
               return (

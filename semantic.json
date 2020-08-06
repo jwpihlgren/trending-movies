@@ -1,5 +1,5 @@
 {
-  "base": "semantic/",
+  "base": "src/semantic",
   "paths": {
     "source": {
       "config": "src/theme.config",
@@ -18,6 +18,6 @@
   "permission": false,
   "autoInstall": false,
   "rtl": false,
-  "components": ["button", "container", "image", "grid", "menu", "card", "rating"],
+  "components": ["button", "container", "image", "grid", "menu", "card", "rating", "button", "container", "image", "grid", "menu", "card", "rating"],
   "version": "2.8.6"
 }
