@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Movies from "./components/Movies";
 import TrendingNavBar from "./components/TrendingNavBar";
+import './semantic/dist/semantic.css';
 
 function App() {
   const [data, setData] = useState({ results: [] });
