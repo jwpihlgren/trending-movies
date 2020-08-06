@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/trending-movies/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/trending-movies/static/js/main.55b068b5.chunk.js",
+    "main.js.map": "/trending-movies/static/js/main.55b068b5.chunk.js.map",
+    "runtime-main.js": "/trending-movies/static/js/runtime-main.69210149.js",
+    "runtime-main.js.map": "/trending-movies/static/js/runtime-main.69210149.js.map",
+    "static/css/2.75236e1c.chunk.css": "/trending-movies/static/css/2.75236e1c.chunk.css",
+    "static/js/2.02781a0c.chunk.js": "/trending-movies/static/js/2.02781a0c.chunk.js",
+    "static/js/2.02781a0c.chunk.js.map": "/trending-movies/static/js/2.02781a0c.chunk.js.map",
+    "index.html": "/trending-movies/index.html",
+    "precache-manifest.2e94f581719ae5405a97af9f34874233.js": "/trending-movies/precache-manifest.2e94f581719ae5405a97af9f34874233.js",
+    "service-worker.js": "/trending-movies/service-worker.js",
+    "static/css/2.75236e1c.chunk.css.map": "/trending-movies/static/css/2.75236e1c.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/trending-movies/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.02781a0c.chunk.js.LICENSE.txt": "/trending-movies/static/js/2.02781a0c.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/trending-movies/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.69210149.js",
+    "static/css/2.75236e1c.chunk.css",
+    "static/js/2.02781a0c.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.55b068b5.chunk.js"
+  ]
+}
