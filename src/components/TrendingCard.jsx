@@ -10,7 +10,7 @@ function TrendingCard(props) {
     }, [props.vote_average]);
     return(  
     <Card>
-      <Image src={"https://image.tmdb.org/t/p/w500/" + props.backdrop} wrapped ui={false} />
+      <Image src={"https://image.tmdb.org/t/p/w300/" + props.backdrop} wrapped ui={false} />
       <Card.Content>
         <Card.Header>{props.title}</Card.Header>
         <Card.Meta>{props.releasedate}</Card.Meta>
