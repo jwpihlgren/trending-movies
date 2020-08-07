@@ -27,18 +27,18 @@ function App() {
     <>
       {/* ROUTING */}
       <Switch>
-        <Route path={"/movie/:id"} render={() => {
+        <Route path={"/trending-movies/movie/:id"} render={() => {
           return(
             <>
-              <TrendingNavBar path={"/"}/>
-              <About movies={data} path={"/movie/"} />
+              <TrendingNavBar path={"/trending-movies"}/>
+              <About movies={data} path={"/trending-movies/movie/"} />
             </>)
         }}/>
         <Route path="/" render={()=> {
           return(
             <>
-              <TrendingNavBar path={"/"} />
-              <Movies movies={data} path={"/movie/"} />
+              <TrendingNavBar path={"/trending-movies"} />
+              <Movies movies={data} path={"/trending-movies/movie/"} />
             </>)
         }}/>
       </Switch>
