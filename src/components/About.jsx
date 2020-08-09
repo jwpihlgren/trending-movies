@@ -9,12 +9,14 @@ function About(props){
     let loc = useLocation().pathname.replace(props.path, "");
   
     return(
+      <>
+      
       <Container>
       <Button basic color="blue" as={Link} to={props.path}>Back</Button>
         {props.movies.results.map(movie => {
       return movie.id === Number(loc) ? (<>
-        <Header textAlign='center' size='medium'>{movie.title +  " ("+ movie.release_date +")"}</Header>
-        <Grid columns={2}>
+        <Header as="h1" style={{display: 'flex', justifyContent: 'center'}}>{movie.title +  " ("+ movie.release_date +")"}</Header>
+        <Grid columns={3} centered doubling>
         <Grid.Column>
         <Image size="large" src={"https://image.tmdb.org/t/p/w500/" + movie.poster_path}
         />
@@ -64,6 +66,7 @@ function About(props){
     : <></>;
     })}
       </Container>
+      </>
     )
   }
 
