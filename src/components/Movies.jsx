@@ -6,7 +6,7 @@ function Movies(props) {
 
     return(
       <Container>
-        <Grid  centered columns={5} doubling >
+        <Grid  centered columns={6} doubling >
 
         
             {props.movies.results.map( (movie) => {
@@ -19,7 +19,7 @@ function Movies(props) {
                                   vote_average={movie.vote_average} 
                                   backdrop={movie.poster_path} 
                                   key={movie.id} id={movie.id} 
-                                  path={props.path}/></Grid.Column>  : "");
+              path={props.path}/></Grid.Column>  : "");
             })
             }
       </Grid>

@@ -12,7 +12,7 @@ function App() {
     /* API CALL */
     const fetchData = async () => {
       const res = await fetch(
-        `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_THE_MOVIE_DB_API_KEY}`
+        `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.REACT_APP_THE_MOVIE_DB_API_KEY}`
       );
       const tmp = await res.json();
       setData(tmp);
@@ -21,7 +21,7 @@ function App() {
 
   }, []);
 
-  console.log("test");
+  console.log(data);
 
   return (
     <>
