@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c46649a5e600f230ad4e6e00dff28e37",
+    "revision": "69161fedef417762aa489f39198892d3",
     "url": "/trending-movies/index.html"
   },
   {
-    "revision": "5be7e6dbbf0212dba2e3",
+    "revision": "c5231edba8f58ac522f7",
     "url": "/trending-movies/static/css/main.8984bd89.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trending-movies/static/js/2.90729e32.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5be7e6dbbf0212dba2e3",
-    "url": "/trending-movies/static/js/main.67bc7973.chunk.js"
+    "revision": "c5231edba8f58ac522f7",
+    "url": "/trending-movies/static/js/main.342c5ac8.chunk.js"
   },
   {
     "revision": "2a8b22874da43c570639",
