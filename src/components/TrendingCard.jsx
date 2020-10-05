@@ -19,7 +19,10 @@ function TrendingCard(props) {
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
-        <Rating disabled maxRating={5} rating={props.vote_average} icon='star' /> 
+      Rating: {props.vote_average} 
+        <Rating disabled maxRating={5} rating={props.vote_average} icon='star' />
+        
+        
         <Button basic color={"blue"} as={Link} to={{pathname: props.path + props.id, state: {id: props.id}}}>    
         Read more
          </Button>

@@ -4,24 +4,28 @@ import About from "./components/About";
 import Movies from "./components/Movies";
 import TrendingNavBar from "./components/TrendingNavBar";
 
-
 function App() {
   const [data, setData] = useState({ results: [] });
 
   useEffect(() => {
-    /* API CALL */
-    const fetchData = async () => {
-      const res = await fetch(
-        `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.REACT_APP_THE_MOVIE_DB_API_KEY}`
-      );
-      const tmp = await res.json();
-      setData(tmp);
-    };
-    fetchData();
+    let cachedData = JSON.parse(localStorage.getItem("cachedData")) || null;
+    if(cachedData && new Date().toDateString() !== cachedData.date) {cachedData = null; console.log("Cache was too old.")};
+    if(cachedData) setData(cachedData.items)
+    else{
+      console.log("NO cached data");
+      const fetchData = async () => {
+        const res = await fetch(
+          `https://api.themoviedb.org/3/trending/movie/week?api_key=${process.env.REACT_APP_THE_MOVIE_DB_API_KEY}`
+        );
+        const tmp = await res.json();
+        const date = new Date().toDateString();
+        localStorage.setItem("cachedData", JSON.stringify({"date": date, "items": tmp}));
+        setData(tmp);
+      };
+      fetchData();
+  }
 
   }, []);
-
-  console.log(data);
 
   return (
     <>
